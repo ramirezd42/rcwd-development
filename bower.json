@@ -1,7 +1,10 @@
 {
   "name": "www.randychampagne.com",
-  "description": "My mobile-responsive portfolio site",
-  "main": "",
+  "description": "My mobile-first responsive portfolio site",
+  "main": [
+    "assets/js/main.coffee",
+    "assets/css/master.styl"
+  ],
   "authors": [
     "Randy Champagne <r-champagne@neiu.edu>"
   ],
