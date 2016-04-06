@@ -1,0 +1,20 @@
+{
+  "name": "www.bethelac.org",
+  "description": "A mobile-first responsive site I am building for my church",
+  "dependencies": {
+    "autoprefixer-stylus": "0.8.x",
+    "axis": "0.5.x",
+    "coffee-script": "^1.0.0",
+    "css-pipeline": "0.3.x",
+    "jade": "^1.0.0",
+    "js-pipeline": "0.2.x",
+    "jstransformer-marked": "^1.0.0",
+    "marked": "0.3.x",
+    "rupture": "0.6.x",
+    "stylus": "0.52.x"
+  },
+  "repository" : { 
+    "type" : "git"
+  , "url" : "https://github.com/champagne-randy/bethelacchurch.github.io.git"
+  }
+}
