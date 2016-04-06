@@ -1,0 +1,21 @@
+{
+  "name": "www.randychampagne.com",
+  "description": "My mobile-responsive portfolio site",
+  "main": "",
+  "authors": [
+    "Randy Champagne <r-champagne@neiu.edu>"
+  ],
+  "license": "GPL-3.0",
+  "homepage": "https://github.com/champagne-randy/rcwd-development",
+  "moduleType": [
+    "es6"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
