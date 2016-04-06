@@ -8,18 +8,24 @@
 include ./includes/head
 
 
-//- header section
-//- includes navBar
-include ./includes/header
+body
+	// header section
+	//- includes navBar
+	include ./includes/header
 
 
-//- body section
+	// main content
+	.wrapper
+		// aboutme
+		include ./includes/aboutme
+
+		//- aboutme
+		include ./includes/aboutme
 
 
+	// footer section
+	include ./includes/footer
 
-//- footer section
-include ./includes/footer
 
-
-//- JS libraries and scripts
-!= js()
+	// JS libraries and scripts
+	!= js()
