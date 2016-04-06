@@ -15,7 +15,8 @@ module.exports =
     '**/layout.*', 
     '**/_*', 
     '.gitignore', 
-    'ship.*conf'
+    'ship.*conf',
+    '**/*.jpg_orig.jpg'
   ]
 
   extensions: [
