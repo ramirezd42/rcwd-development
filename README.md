@@ -67,20 +67,26 @@ sass   = accord.load 'node-sass'
 	sass:
 		pretty: true
 ```
-- Change .styl files with .scss files. Delete all the files in the 'assets/css' directory of your project. Create a new file in 'assets/css' named 'master.scss'. This file is where you will start creating your sass files.
-- Use '.scss' file extension instead of '.sass' for all sass files
+- Change `.styl` files with .scss files. Delete all the files in the `assets/css` directory of your project. Create a new file in `assets/css` named `master.scss`. This file is where you will start creating your sass files.
+- Use `.scss` file extension instead of `.sass` for all sass files
 
 
 
 
-#### using browserify for js pre-processing
+#### using a browserify-babel js pipeline
 
-- install [roots-browserify](https://github.com/carrot/roots-browserify) module 'npm install roots-browserify --save'
-- import module into app.cofee ```browserify = require 'roots-browserify'```
+- install [roots-browserify](https://github.com/carrot/roots-browserify) module `npm install roots-browserify babelify --save`
+- import modules into app.cofee 
+```
+browserify = require 'roots-browserify'
+babelify   = require 'babelify'
+```
 - add extension configuration
 ```
     browserify
       files: 'assets/js/main.coffee'
+      sourceMap: true
+      transform: babelify
       out: 'js/build.js'
 ```
 
