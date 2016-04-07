@@ -13,8 +13,9 @@
     "rupture": "0.6.x",
     "stylus": "0.52.x"
   },
-  "repository" : { 
-    "type" : "git"
-  , "url" : "https://github.com/champagne-randy/rcwd-development.git"
-  }
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/champagne-randy/rcwd-development.git"
+  },
+  "devDependencies": {}
 }
