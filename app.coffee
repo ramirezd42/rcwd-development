@@ -1,8 +1,10 @@
 axis         = require 'axis'
 rupture      = require 'rupture'
 autoprefixer = require 'autoprefixer-stylus'
-js_pipeline  = require 'js-pipeline'
 css_pipeline = require 'css-pipeline'
+browserify   = require 'roots-browserify'
+babelify     = require 'babelify'
+
 
 module.exports =
   ignores: [
@@ -16,16 +18,19 @@ module.exports =
     '**/_*', 
     '.gitignore', 
     'ship.*conf',
-    '**/*.jpg_orig.jpg'
+    '**/*.jpg_orig.jpg',
+    '.DS_Store'
   ]
 
   extensions: [
-    js_pipeline(files: 'assets/js/*.coffee'),
     css_pipeline(files: 'assets/css/*.styl')
+    browserify
+      files: 'assets/js/main.js'
+      sourceMap: true
+      transform: babelify
+      out: 'js/main.js'
   ]
 
-  'coffee-script':
-    sourcemap: true
 
   jade:
     pretty: true
