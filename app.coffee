@@ -25,7 +25,7 @@ module.exports =
   extensions: [
     css_pipeline(files: 'assets/css/*.styl')
     browserify
-      files: 'assets/js/main.js'
+      files: 'assets/js/main.es6'
       sourceMap: true
       transform: babelify
       out: 'js/main.js'

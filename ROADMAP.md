@@ -4,6 +4,13 @@ These are some ideas I am ruminating.
 
 
 
+
+### Fix script bug
+
+* `require` vendor scripts diretcly into `main.es6`
+
+
+
 ### Update Roots build recipe
 
 * build a ```.json``` file that models the site-map (pages and copy)
