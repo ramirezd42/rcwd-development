@@ -7,7 +7,8 @@ These are some ideas I am ruminating.
 
 ### Fix script bug
 
-* `require` vendor scripts diretcly into `main.es6`
+* (done) `require` vendor scripts diretcly into `main.es6`
+* identify resource that is failing to load
 
 
 
