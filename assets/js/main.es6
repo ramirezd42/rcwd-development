@@ -12,6 +12,9 @@ window.$ = $;
 window.jQuery = jQuery;
 
 
+//debugger
+console.log(window.$);
+
 
 // import scrollex
 let scrollex = require('./jquery.scrollex.min.js');

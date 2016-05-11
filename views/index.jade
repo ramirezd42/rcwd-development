@@ -1,31 +1,32 @@
-//- metadata code block
-include ./includes/head
+doctype html
+html
+	//- metadata code block
+	include ./includes/head
+	
+	body
+		// header section
+		//- includes navBar
+		include ./includes/header
 
 
-body
-	// header section
-	//- includes navBar
-	include ./includes/header
+		// main content
+		#wrapper
+			// aboutme
+			include ./includes/aboutme
+
+			// services
+			include ./includes/services
+
+			// portfolio
+			include ./includes/portfolio
+
+			// contactme
+			include ./includes/contactme
 
 
-	// main content
-	#wrapper
-		// aboutme
-		include ./includes/aboutme
-
-		// services
-		include ./includes/services
-
-		// portfolio
-		include ./includes/portfolio
-
-		// contactme
-		include ./includes/contactme
+		// footer section
+		include ./includes/footer
 
 
-	// footer section
-	include ./includes/footer
-
-
-	// JS libraries and scripts
-	script(src='/js/main.js')
+		// JS libraries and scripts
+		script(src='./js/main.js')
