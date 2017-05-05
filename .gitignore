@@ -1,4 +1,10 @@
 .DS_Store
 node_modules
-public
-bower_components
+dist
+test
+_subl
+_output
+npm-debug*
+_slides
+_videos
+_assignments
